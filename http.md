@@ -23,3 +23,25 @@ OPTIONS - Describir opciones de conexion
 TRACE - Envio de mensaje para ver por donde pasa hacia el recurso
 
 PATCH - Modificaciones parciales en el recurso(Reemplazar solo una parte)
+
+
+
+Codigos de estado de respuesta
+
+1. Respuestas informativas (100 - 199)
+2. Respuestas satisfactorias(200 - 299)
+3. Redirecciones (300 - 399)
+4. Errores de clientes (400 - 499)
+5. Errores de los servidores(500 - 599)
+
+Importantes
+200 OK
+201 Created
+202 Acepted
+
+301 Multiple choise
+
+400 Bad Request
+401 Unauthorized
+404 Not Foud
+
