@@ -1,5 +1,7 @@
 // Libreria
 const express = require('express')
+
+// Objeto app, objeto de tipo express, objeto servidor, el ejecutable para levantar el servidor
 const app = express()
 const port = 3000;
 
@@ -7,11 +9,11 @@ const port = 3000;
 // res es la respuesta que queremos enviar al cliente que ha hecho la peticion
 app.get('/', (req, res) => {
     console.log(req)
-    res.status(200).send('Hola mundo desde el server!')
+    res.status(200).send('Hello World')
 })
 
 app.post('/team/pokemons', () => {
-    
+
 })
 
 app.get('/team', () => {
@@ -30,3 +32,6 @@ app.put('/team', () => {
 app.listen(port, () => {
     console.log("Server started at port 3000")
 })
+
+
+exports.app = app;
