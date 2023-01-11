@@ -16,8 +16,8 @@ app.post('/team/pokemons', () => {
 
 })
 
-app.get('/team', () => {
-
+app.get('/team', (req, res) => {
+    res.status(200).send('Hello World')
 })
 
 // Para poner parametros en express se utilizan : 
